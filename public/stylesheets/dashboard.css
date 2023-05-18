@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(32, 35, 41);
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  padding: 30px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+.row {
+  background: rgb(32, 35, 41);
+  display: flex;
+  flex-wrap: wrap; /* add this property to wrap boxes onto new lines */
+  align-items: left;
+  justify-content: left;
+}
+.box {
+  width: 500px;
+  height: 200px;
+  border-radius: 10px;
+  background: #000;
+  color: white;
+  margin: 10px; /* add some margin between boxes */
+}
+.buttons {
+  margin-top: 20px;
+}
+.buttons a {
+  width: 100px;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 20px;
+  color: black;
+  text-decoration: none;
+}

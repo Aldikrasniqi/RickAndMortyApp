@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+.top-head {
+  background-color: #f5f5f5;
+  height: 400px;
+  background: url(https://www.drawingnow.com/file/videos/steps/123626/how-to-draw-rick-and-morty-rick-sanchez-step-7.jpg)
+    no-repeat right fixed;
+}
+.top-head h1 {
+  font-size: 80px;
+  color: rgb(32, 35, 41);
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  font-weight: bolder;
+  justify-content: center;
+}
+header {
+  position: static;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  width: 150px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 20px;
+}
+header nav ul li {
+  margin: 0px 15px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+.logout {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #793200;
+}
+.row {
+  background: rgb(32, 35, 41);
+  display: flex;
+  flex-wrap: wrap; /* add this property to wrap boxes onto new lines */
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.box {
+  width: 500px;
+  height: 200px;
+  border-radius: 10px;
+  background: #000;
+  color: white;
+  margin: 10px; /* add some margin between boxes */
+}
+.box img {
+  border-radius: 10px 0px 0px 10px;
+  display: block;
+  height: 100%;
+  float: left;
+  display: block;
+}
+.text-left {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px;
+  margin-left: 20px;
+}
+footer {
+  background: rgb(13, 15, 19);
+  width: 100%;
+
+  color: white;
+}
+footer .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: 20px;
+  padding: 40px;
+}
+footer .powered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}

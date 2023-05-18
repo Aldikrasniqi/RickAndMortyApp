@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="http://localhost:3000/stylesheets/dashboard.css"
+    />
+    <title>Favorites</title>
+  </head>
+  <body>
+    <h1>Favorite Characters</h1>
+    <div class="row">
+      <ol>
+        <% favorites.forEach(function(favorite) { %>
+        <div class="box">
+          <img
+            src="<%= favorite.image %>"
+            alt="<%= favorite.name %> Image"
+            width="100"
+            height="100"
+          />
+          <h1><%= favorite.character_name %></h1>
+          -
+          <p>Last time Active: <%= favorite.status %></p>
+          <div class="buttons">
+            <a href="/delete/<%= favorite.id %>">delete</a>
+            <a href="/edit/<%= favorite.id %>">edit</a>
+          </div>
+        </div>
+        <% }); %>
+      </ol>
+    </div>
+
+    <a href="/dashboard">Back to the dashboard</a>
+  </body>
+</html>
